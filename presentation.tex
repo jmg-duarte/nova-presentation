@@ -1,0 +1,95 @@
+\documentclass[bigger,notes]{beamer}
+
+\usetheme{default}
+\usecolortheme[]{seahorse}
+\useinnertheme[]{circles}
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,right]{title}%
+    \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\setbeamerfont{note page}{size=\small}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{array}
+\usepackage{xcolor,colortbl}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{diagbox}
+
+\usepackage{pgfgantt}
+\usepackage{pgfpages}
+
+\usepackage{adjustbox}
+
+\usepackage[main=american,portuguese]{babel}
+\babeltags{pt=portuguese, enUS=american}
+
+\usepackage{xparse}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{shapes.arrows}
+\usetikzlibrary{shadows}
+\usetikzlibrary{fadings}
+
+\tikzset{
+    invisible/.style={opacity=0,text opacity=0},
+    visible on/.style={alt=#1{}{invisible}},
+    alt/.code args={<#1>#2#3}{%
+      \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
+    },
+}
+
+\tikzstyle{pointer} = [<-, very thick, red!90]
+
+\usepackage[acronym]{glossaries}
+
+%Information to be included in the title page:
+\title{Sample}
+\author{\large{José Duarte}}
+
+\institute{%
+    \small{
+        \textit{Advisor:} Advisor\\%
+        \vspace{1em} NOVA University of Lisbon%
+    }
+}
+\date{2020}
+\titlegraphic{\includegraphics[height=1cm]{logo-fct.png}}
+
+
+\setbeameroption{show notes on second screen}
+
+\begin{document}
+
+\begin{frame}[plain]
+    \titlepage
+
+    \note{}
+\end{frame}
+
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection, hideothersubsections]
+    \end{frame}
+}
+
+\begin{frame}
+    \frametitle{Outline}
+    \tableofcontents[hideallsubsections]
+
+    \note{}
+\end{frame}
+
+\end{document}
