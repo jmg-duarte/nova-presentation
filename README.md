@@ -1,6 +1,9 @@
-<img src="logo-nova.png" style="display:block; margin-left:auto; margin-right:auto; width:200px;">
+<div align="center">
+  <img src="logo-nova.png" width="150" />
 
-# Nova Tex Presentation Template
+  <h1>Nova Tex Presentation Template</h1>
+  <h3>A `.tex` template for NOVA presentations</h3>
+</div>
 
 DISCLAIMER: This project is unofficial, built and managed by a NOVA student.
 
