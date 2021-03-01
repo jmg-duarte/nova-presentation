@@ -8,7 +8,7 @@
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
     },
-    "workbench.colorTheme": "Gray Matter Light",
+    "workbench.colorTheme": "Gruvbox Light Hard",
     "git.enableSmartCommit": true,
     // "git.postCommitCommand": "sync",
     "files.exclude": {},
