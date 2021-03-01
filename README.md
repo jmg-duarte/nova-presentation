@@ -1,4 +1,4 @@
-<img src="logo-nova.png" width=200 align="center">
+<img src="logo-nova.png" width=200 style="display:block; margin-left:auto; margin-right:auto;">
 
 # Nova Tex Presentation Template
 
